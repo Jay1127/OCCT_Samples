@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DrawShapes">
+      <UniqueIdentifier>{5cd7bc9f-943d-4a89-8401-0541fdbe66fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HelloOCCT">
+      <UniqueIdentifier>{746386f8-3fa4-4011-8bc2-69aed5565ecf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HelloOCCT_Viewport.h">
+      <Filter>HelloOCCT</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShapes_Viewport.h">
+      <Filter>DrawShapes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HelloOCCT_Viewport.cpp">
+      <Filter>HelloOCCT</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShapes_Viewport.cpp">
+      <Filter>DrawShapes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

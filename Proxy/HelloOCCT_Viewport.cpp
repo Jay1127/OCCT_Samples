@@ -1,18 +1,18 @@
-#include "Viewport.h"
+#include "HelloOCCT_Viewport.h"
 
 #include <WNT_Window.hxx>
 
-bool Viewport::Initialize(System::IntPtr handle)
+bool HelloOCCT_Viewport::Initialize(System::IntPtr handle)
 {
-	// graphic driver
+	// create graphic driver
 	Handle(Aspect_DisplayConnection) displayConnection;
 	_graphicDriver() = new OpenGl_GraphicDriver(displayConnection);
 
-	// viewer 
+	// create viewer 
 	_viewer() = new V3d_Viewer(_graphicDriver());
 
-	// view
-	auto wntWindow = new WNT_Window(reinterpret_cast<HWND>(handle.ToPointer())); // window
+	// create view (window os)
+	auto wntWindow = new WNT_Window(reinterpret_cast<HWND>(handle.ToPointer()));
 	_view() = _viewer()->CreateView();
 	_view()->SetWindow(wntWindow);
 
@@ -21,7 +21,7 @@ bool Viewport::Initialize(System::IntPtr handle)
 		wntWindow->Map();
 	}
 
-	// interactive context
+	// create interactive context
 	_aisContext() = new AIS_InteractiveContext(_viewer());
 	_aisContext()->UpdateCurrentViewer();
 
@@ -32,12 +32,12 @@ bool Viewport::Initialize(System::IntPtr handle)
 	return false;
 }
 
-void Viewport::Update()
+void HelloOCCT_Viewport::Update()
 {
 	_view()->Redraw();
 }
 
-void Viewport::SetBackgroudColor(System::Drawing::Color backgroundColor)
+void HelloOCCT_Viewport::SetBackgroudColor(System::Drawing::Color backgroundColor)
 {
 	if (_view().IsNull())
 	{

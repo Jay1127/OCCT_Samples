@@ -20,7 +20,7 @@
 #pragma comment(lib, "TKVrml.lib")
 #pragma comment(lib, "TKLCAF.lib")
 
-public ref class Viewport
+public ref class HelloOCCT_Viewport
 {
 public:
 	bool Initialize(System::IntPtr handle);

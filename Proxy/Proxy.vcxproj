@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Viewport.h" />
+    <ClInclude Include="DrawShapes_Viewport.h" />
+    <ClInclude Include="HelloOCCT_Viewport.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Viewport.cpp" />
+    <ClCompile Include="DrawShapes_Viewport.cpp" />
+    <ClCompile Include="HelloOCCT_Viewport.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

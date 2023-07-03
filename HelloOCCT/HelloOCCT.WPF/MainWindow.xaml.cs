@@ -9,13 +9,13 @@ namespace HelloOCCT.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        Viewport viewport;
+        HelloOCCT_Viewport viewport;
 
         public MainWindow()
         {
             InitializeComponent();
-            ViewPanel.Loaded += ViewPanel_Loaded;
 
+            ViewPanel.Loaded += ViewPanel_Loaded;
             LayoutUpdated += MainWindow_LayoutUpdated;
         }
 
@@ -27,7 +27,7 @@ namespace HelloOCCT.WPF
             uc.Height = (int)ViewPanel.ActualHeight;
 
             // set handle to viewport
-            viewport = new Viewport();
+            viewport = new HelloOCCT_Viewport();
             viewport.Initialize(uc.Handle);
             viewport.SetBackgroudColor(System.Drawing.Color.Red);
 
