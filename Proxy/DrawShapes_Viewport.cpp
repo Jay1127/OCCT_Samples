@@ -1,6 +1,5 @@
 #include "DrawShapes_Viewport.h"
 
-#include <math.h>
 #include <WNT_Window.hxx>
 
 #include <Geom_CartesianPoint.hxx>
@@ -23,7 +22,7 @@
 #include <AIS_Plane.hxx>
 #include <AIS_Shape.hxx>
 
-bool DrawShapes_Viewport::Initialize(System::IntPtr handle)
+void DrawShapes_Viewport::Initialize(System::IntPtr handle)
 {
     // create graphic driver
     Handle(Aspect_DisplayConnection) displayConnection;
@@ -52,8 +51,6 @@ bool DrawShapes_Viewport::Initialize(System::IntPtr handle)
     // update view
     _view()->Redraw();
     _view()->MustBeResized();
-
-    return false;
 }
 
 void DrawShapes_Viewport::Redraw()
@@ -73,11 +70,15 @@ void DrawShapes_Viewport::ClearAll()
 
 void DrawShapes_Viewport::DrawLine()
 {
+    // make geometry data
     gp_Pnt startPt(0, 0, 0);
     gp_Pnt endPt(100, 100, 100);
     Handle(Geom_Line) line = GC_MakeLine(startPt, endPt);
+
+    // make presentable object using geometry data
     Handle(AIS_Line) shape = new AIS_Line(line);
 
+    // display presentable object
     _aisContext()->Display(shape, false);
 }
 

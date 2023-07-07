@@ -1,11 +1,11 @@
-﻿<Window x:Class="DrawShapes.MainWindow"
+﻿<Window x:Class="DrawShapes_Custom.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DrawShapes"
+        xmlns:local="clr-namespace:DrawShapes_Custom"
         mc:Ignorable="d"
-        Title="Draw Shapes" Height="450" Width="800">
+        Title="DrawShapes_Custom" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -18,17 +18,10 @@
                     <Setter Property="Margin" Value="0,5,0,0"/>
                 </Style>
             </StackPanel.Resources>
-            <Button Content="Line" Click="DrawShape"/>
-            <Button Content="Segment" Click="DrawShape"/>
-            <Button Content="Circle" Click="DrawShape"/>
-            <Button Content="Axis" Click="DrawShape"/>
-            <Button Content="Point" Click="DrawShape"/>
-            <Button Content="Text" Click="DrawShape"/>
-            <Button Content="Plane" Click="DrawShape"/>
-            <Button Content="Box" Click="DrawShape"/>
-            <Button Content="Cylinder" Click="DrawShape"/>
+            <Button Content="Arc" Click="DrawShape"/>
+            <Button Content="Solid" Click="DrawShape"/>
         </StackPanel>
-        
+
         <ContentControl x:Name="ViewPanel" />
     </Grid>
 </Window>

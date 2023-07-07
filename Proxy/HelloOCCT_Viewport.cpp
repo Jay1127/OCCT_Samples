@@ -2,7 +2,7 @@
 
 #include <WNT_Window.hxx>
 
-bool HelloOCCT_Viewport::Initialize(System::IntPtr handle)
+void HelloOCCT_Viewport::Initialize(System::IntPtr handle)
 {
 	// create graphic driver
 	Handle(Aspect_DisplayConnection) displayConnection;
@@ -28,8 +28,6 @@ bool HelloOCCT_Viewport::Initialize(System::IntPtr handle)
 	// update view
 	_view()->Redraw();
 	_view()->MustBeResized();
-
-	return false;
 }
 
 void HelloOCCT_Viewport::Update()

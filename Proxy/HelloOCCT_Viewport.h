@@ -23,7 +23,7 @@
 public ref class HelloOCCT_Viewport
 {
 public:
-	bool Initialize(System::IntPtr handle);
+    void Initialize(System::IntPtr handle);
 	void Update();
 	void SetBackgroudColor(System::Drawing::Color backgroundColor);
 

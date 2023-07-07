@@ -19,10 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AIS_Curve.h" />
+    <ClInclude Include="AIS_Solid.h" />
+    <ClInclude Include="DrawShapes_Custom_Viewport.h" />
     <ClInclude Include="DrawShapes_Viewport.h" />
     <ClInclude Include="HelloOCCT_Viewport.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AIS_Curve.cpp" />
+    <ClCompile Include="AIS_Solid.cpp" />
+    <ClCompile Include="DrawShapes_Custom_Viewport.cpp" />
     <ClCompile Include="DrawShapes_Viewport.cpp" />
     <ClCompile Include="HelloOCCT_Viewport.cpp" />
   </ItemGroup>

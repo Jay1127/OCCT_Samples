@@ -24,7 +24,7 @@
 #pragma comment(lib, "TKPrim.lib")
 #pragma comment(lib, "TKTopAlgo.lib")
 
-public ref class DrawShapes_Viewport
+public ref class DrawShapes_Custom_Viewport
 {
 public:
     void Initialize(System::IntPtr handle);
@@ -33,16 +33,8 @@ public:
 
     void ClearAll();
 
-    void DrawLine();
-    void DrawSegment();
-    void DrawCircle();
-    void DrawAxis();
-    void DrawPoint();
-    void DrawText();
-    void DrawPlane();
-
-    void DrawBox();
-    void DrawCyliner();
+    void DrawArc();
+    void DrawSolid();
 
 private:
     NCollection_Haft<Handle(V3d_Viewer)> _viewer;

@@ -7,6 +7,9 @@
     <Filter Include="HelloOCCT">
       <UniqueIdentifier>{746386f8-3fa4-4011-8bc2-69aed5565ecf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DrawShapes_Custom">
+      <UniqueIdentifier>{a438f581-9cc9-48df-8ef4-b595b331bd77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HelloOCCT_Viewport.h">
@@ -15,6 +18,15 @@
     <ClInclude Include="DrawShapes_Viewport.h">
       <Filter>DrawShapes</Filter>
     </ClInclude>
+    <ClInclude Include="AIS_Curve.h">
+      <Filter>DrawShapes_Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShapes_Custom_Viewport.h">
+      <Filter>DrawShapes_Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="AIS_Solid.h">
+      <Filter>DrawShapes_Custom</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloOCCT_Viewport.cpp">
@@ -22,6 +34,15 @@
     </ClCompile>
     <ClCompile Include="DrawShapes_Viewport.cpp">
       <Filter>DrawShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AIS_Curve.cpp">
+      <Filter>DrawShapes_Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShapes_Custom_Viewport.cpp">
+      <Filter>DrawShapes_Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="AIS_Solid.cpp">
+      <Filter>DrawShapes_Custom</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
