@@ -10,6 +10,9 @@
     <Filter Include="DrawShapes_Custom">
       <UniqueIdentifier>{a438f581-9cc9-48df-8ef4-b595b331bd77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CameraController">
+      <UniqueIdentifier>{d55e92f1-9fda-4b07-add5-9f88070d6787}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HelloOCCT_Viewport.h">
@@ -27,6 +30,9 @@
     <ClInclude Include="AIS_Solid.h">
       <Filter>DrawShapes_Custom</Filter>
     </ClInclude>
+    <ClInclude Include="CameraController_Viewport.h">
+      <Filter>CameraController</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloOCCT_Viewport.cpp">
@@ -43,6 +49,9 @@
     </ClCompile>
     <ClCompile Include="AIS_Solid.cpp">
       <Filter>DrawShapes_Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController_Viewport.cpp">
+      <Filter>CameraController</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

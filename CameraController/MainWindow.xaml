@@ -1,0 +1,49 @@
+﻿<Window x:Class="CameraController.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CameraController"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl x:Name="ViewPanel" />
+        <StackPanel Grid.Column="1">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="Width" Value="50"/>
+                </Style>
+                <Style TargetType="{x:Type RadioButton}">
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </StackPanel.Resources>
+            <GroupBox Header="View">
+                <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="Top" Click="ViewDirectionChanged"/>
+                    <Button Content="Bottom" Click="ViewDirectionChanged"/>
+                    <Button Content="Front" Click="ViewDirectionChanged"/>
+                    <Button Content="Rear" Click="ViewDirectionChanged"/>
+                    <Button Content="Left" Click="ViewDirectionChanged"/>
+                    <Button Content="Right" Click="ViewDirectionChanged"/>
+                </WrapPanel>
+            </GroupBox>
+            <GroupBox Header="Projection">
+                <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <RadioButton Content="Orthogonal" Checked="ViewProjectionChanged" IsChecked="True" />
+                    <RadioButton Content="Perspective" Checked="ViewProjectionChanged" />
+                </WrapPanel>
+            </GroupBox>
+            <GroupBox Header="ETC">
+                <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button Content="ZomFit" Click="ZoomFit" Margin="15,0,0,0"/>
+                </WrapPanel>
+            </GroupBox>
+        </StackPanel>
+        
+    </Grid>
+</Window>
