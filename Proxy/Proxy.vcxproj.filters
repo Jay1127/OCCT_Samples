@@ -13,6 +13,9 @@
     <Filter Include="CameraController">
       <UniqueIdentifier>{d55e92f1-9fda-4b07-add5-9f88070d6787}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BooleanOperation">
+      <UniqueIdentifier>{23eb5053-f7cf-47bc-b070-7a8d7fc63c78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HelloOCCT_Viewport.h">
@@ -33,6 +36,9 @@
     <ClInclude Include="CameraController_Viewport.h">
       <Filter>CameraController</Filter>
     </ClInclude>
+    <ClInclude Include="BooleanOperation_Viewport.h">
+      <Filter>BooleanOperation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloOCCT_Viewport.cpp">
@@ -52,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="CameraController_Viewport.cpp">
       <Filter>CameraController</Filter>
+    </ClCompile>
+    <ClCompile Include="BooleanOperation_Viewport.cpp">
+      <Filter>BooleanOperation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CamaraController", "CamaraC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraController", "CameraController\CameraController.csproj", "{9D04084B-C3DF-4436-8E4C-15D992325A8E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BooleanOperation", "BooleanOperation", "{BCD543EE-E185-4238-AE30-ABB8F1199259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanOperation", "BooleanOperation\BooleanOperation.csproj", "{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,18 @@ Global
 		{9D04084B-C3DF-4436-8E4C-15D992325A8E}.Release|x64.Build.0 = Release|Any CPU
 		{9D04084B-C3DF-4436-8E4C-15D992325A8E}.Release|x86.ActiveCfg = Release|Any CPU
 		{9D04084B-C3DF-4436-8E4C-15D992325A8E}.Release|x86.Build.0 = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|x64.Build.0 = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|x64.ActiveCfg = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|x64.Build.0 = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +129,7 @@ Global
 		{902D9197-35DE-494F-BEC5-F03733219AAD} = {0A7AA0FE-105C-40FA-8835-29CB4A2D1943}
 		{B781AABC-B2A9-4CC8-ADF4-145AEDEA5053} = {452EE6F4-715C-4E56-9A8E-33B50D8BCD80}
 		{9D04084B-C3DF-4436-8E4C-15D992325A8E} = {BB90B503-7849-4DE5-AC89-26194182C62C}
+		{1ED931A9-39E8-47B7-8523-6C6370EEA6CB} = {BCD543EE-E185-4238-AE30-ABB8F1199259}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E9F9021-749D-46FD-BA0A-C089A450A81D}
